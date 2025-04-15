@@ -1,0 +1,42 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 колонки с учетом gap */
+    min-width: 250px; /* Минимальная ширина элемента */
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header {
+    flex: 0 0 100%; /* Занимает всю ширину */
+    background-color: #ff93f4;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.product::before {
+content: "Новинка";
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: red;
+color: white;
+padding: 5px;
+font-size: 0.8em;
+transform: rotate(45deg);
+}
+</style>
